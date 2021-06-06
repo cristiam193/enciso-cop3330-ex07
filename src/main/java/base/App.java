@@ -32,4 +32,20 @@ Implement this program as a GUI program that automatically updates the values wh
  */
 
 public class App {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int length, width;
+        System.out.print("what is the length of the room in feet? " );
+        length = in.nextInt();
+        System.out.print("What is the width of the room in feet? ");
+        width = in.nextInt();
+        int area = length  * width;
+        final double conversion = (area * 0.09290304);
+
+        System.out.println("You entered dimensions of " + length + " feet by " + width + " feet.");
+        System.out.println("The area is\n" + area + " square feet");
+        System.out.printf("%.3f square meters", conversion);
+
+
+    }
 }
